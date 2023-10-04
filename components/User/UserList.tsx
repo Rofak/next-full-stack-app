@@ -16,7 +16,7 @@ export default function UserList() {
     { text: "Action", value: "action" },
   ];
   useEffect(() => {
-    dispatch(fetchUser(1));
+    dispatch(fetchUser());
   }, [dispatch]);
   const users: any = useAppSelector((state) => state.users);
   const handlePageClick = () => {};
